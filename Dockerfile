@@ -16,6 +16,7 @@ RUN \
 VOLUME ["/logstash/config"]
 COPY config/logstash.conf /logstash/config/
 COPY run.sh /
+RUN chmod +x /run.sh
 # Optional certificates folder
 VOLUME ["/logstash/certs"]
 CMD ["/run.sh"]
