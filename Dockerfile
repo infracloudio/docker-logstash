@@ -18,4 +18,4 @@ VOLUME ["/logstash/config"]
 # Optional certificates folder
 VOLUME ["/logstash/certs"]
 
-CMD ["/logstash/bin/logstash", "--quiet",  "-f", "/logstash/config/logstash.conf"]
+CMD ["/logstash/bin/logstash", "-f", "/logstash/config/logstash.conf", "-v"]
