@@ -14,6 +14,7 @@ RUN \
 
 # Logstash config
 VOLUME ["/logstash/config"]
+COPY config/logstash.conf /logstash/config/
 
 # Optional certificates folder
 VOLUME ["/logstash/certs"]
